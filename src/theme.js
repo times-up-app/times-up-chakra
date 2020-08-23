@@ -11,6 +11,7 @@ theme.config = {
 theme.colors = {
     brown: "#6D4800",
     pink: "#FF8686",
+    dullPink: "#BA9A9A",
     white: "#FFFFFF",
     lightYellow: "#FFF7D7",
 };

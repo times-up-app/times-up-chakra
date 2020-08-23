@@ -6,7 +6,7 @@ import {
 import { H2, P, gradient } from './utils';
 import NavBar from './NavBar';
 
-function About(props) {
+function Settings(props) {
     return (
         <Box
             bg={gradient}
@@ -18,9 +18,9 @@ function About(props) {
         >
             <NavBar />
             <SimpleGrid p="100px" columns={1} spacing={20}>
-                <H2>Time to get stuff done.</H2>
+                <H2>Settings</H2>
                 <P whiteSpace="pre-line">
-                    Times Up! is a time management tool, designed to make meetings more efficient than ever.
+                    Stay tuned for chances to customize your Times Up! experience!
                 </P>
             </SimpleGrid>
         </Box>
@@ -28,4 +28,4 @@ function About(props) {
 
 }
 
-export default About;
+export default Settings;

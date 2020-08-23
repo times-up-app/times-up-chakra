@@ -5,7 +5,6 @@ import {
 } from '@chakra-ui/core';
 import theme from './theme';
 import Routes from './Routes';
-import Landing from './Landing';
 
 function App() {
   return (

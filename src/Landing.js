@@ -1,13 +1,11 @@
 import React from 'react';
 import {
   Box,
-  Text,
   VStack,
   Grid,
   Image
 } from '@chakra-ui/core';
-import { Link } from "@chakra-ui/core";
-import { PinkButton, gradient } from './utils';
+import { PinkButton, H1, H3, gradient } from './utils';
 import NavBar from './NavBar';
 
 function Landing(props) {
@@ -29,11 +27,16 @@ function Landing(props) {
             >
                 <VStack>
                     <Image src="logo.png" h="200px" />
-                    <Text fontSize="xl" fontWeight="medium" color="brown">Time's Up!</Text>
-                    <Text fontSize="md" color="brown">Get ahead of time.</Text>
+                    <H1>Time's Up!</H1>
+                    <H3>Get ahead of time.</H3>
                     <Box h="40px" />
+<<<<<<< HEAD
                     <PinkButton onClick={() => window.location.assign("create-meeting")}>Create Meeting</PinkButton>
                     <PinkButton to="/">Join Meeting</PinkButton>
+=======
+                    <PinkButton to="/create">Create Meeting</PinkButton>
+                    <PinkButton to="/join">Join Meeting</PinkButton>
+>>>>>>> 93663ba79c84ef0ee1b5b4324afad8717eb28e1b
                 </VStack>
             </Grid>
         </Box>
