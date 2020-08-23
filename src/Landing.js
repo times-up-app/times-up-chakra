@@ -6,6 +6,7 @@ import {
   Grid,
   Image
 } from '@chakra-ui/core';
+import { Link } from "@chakra-ui/core";
 import { PinkButton, gradient } from './utils';
 import NavBar from './NavBar';
 
@@ -31,7 +32,7 @@ function Landing(props) {
                     <Text fontSize="xl" fontWeight="medium" color="brown">Time's Up!</Text>
                     <Text fontSize="md" color="brown">Get ahead of time.</Text>
                     <Box h="40px" />
-                    <PinkButton msg="Create Meeting" />
+                    <PinkButton msg="Create Meeting" href = "/Form"/>
                     <PinkButton msg="Join Meeting" />
                 </VStack>
             </Grid>

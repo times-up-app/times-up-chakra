@@ -5,6 +5,7 @@ import {
 } from '@chakra-ui/core';
 import theme from './theme';
 import Landing from './Landing';
+import Form from './meeting_form';
 
 
 function App() {
@@ -12,6 +13,8 @@ function App() {
     <ChakraProvider theme={theme}>
         <CSSReset />
         <Landing/>
+        <Form/>
+
     </ChakraProvider>
   );
 }
