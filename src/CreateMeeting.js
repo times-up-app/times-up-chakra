@@ -2,14 +2,12 @@
 import React from 'react';
 import {
     FormControl,
-    FormLabel,
     FormErrorMessage,
     Box,
     Grid,
     Input,
     HStack,
     SimpleGrid,
-    Text,
     NumberInput,
     NumberInputField,
     NumberInputStepper,

@@ -2,30 +2,16 @@
 import React from 'react';
 import {
     FormControl,
-    FormLabel,
     FormErrorMessage,
     Box,
     Grid,
     Input,
-    HStack,
-    SimpleGrid,
-    Text,
-    NumberInput,
-    NumberInputField,
-    NumberInputStepper,
-    NumberIncrementStepper,
-    NumberDecrementStepper,
+    SimpleGrid
   } from '@chakra-ui/core';
-import { PinkSubmitButton, LinkButton, Label, H2, P, gradient } from './utils';
+import { PinkSubmitButton, Label, H2, gradient } from './utils';
 import NavBar from './NavBar';
 import { Formik, Field, Form } from 'formik';
-
-const onSubmit = (values, actions) => {
-    setTimeout(() => {
-    alert(Number(values.id))
-    actions.setSubmitting(false)
-    }, 1000)
-};
+import { withRouter } from 'react-router-dom';
 
 function JoinMeeting(props) {
     return (
@@ -56,7 +42,10 @@ function JoinMeeting(props) {
                             }
                             return errors;
                     }}
-                    onSubmit={onSubmit}
+                    onSubmit={(values, actions) => {
+                        // TODO: replace with Redirect?
+                        props.history.push(`/meeting-${Number(values.id)}`);
+                    }}
                 >
                     <Form>
                         <H2>Joint Existing Meeting</H2>
@@ -93,4 +82,4 @@ function JoinMeeting(props) {
     )
 }
 
-export default JoinMeeting;
+export default withRouter(JoinMeeting);

@@ -11,7 +11,7 @@ export function PinkButton(props) {
         <Button
             as={Link}
             to={props.to}
-            bg="pink"
+            bg={(props.isDisabled && "dullPink") || "pink"}
             borderRadius={25}
             color="white"
             fontSize="sm"
@@ -67,7 +67,7 @@ export const H3 = (props) => (
 );
 
 export const P = (props) => (
-    <Text fontSize="sm" fontWeight="medium" color="brown">{props.children}</Text>
+    <Text fontSize="sm" fontWeight="regular" color="brown">{props.children}</Text>
 );
 
 export const Label = (props) => (

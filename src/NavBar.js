@@ -15,7 +15,7 @@ function NavBar(props) {
                 <ButtonGroup variant="link" spacing="5">
                     <LinkButton to="/">Home</LinkButton>
                     <LinkButton to="/about">About</LinkButton>
-                    <LinkButton to="/">Settings</LinkButton>
+                    <LinkButton to="/settings">Settings</LinkButton>
                 </ButtonGroup>
             </Box>
         </Flex>

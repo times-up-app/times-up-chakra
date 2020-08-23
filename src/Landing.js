@@ -1,12 +1,10 @@
 import React from 'react';
 import {
   Box,
-  Text,
   VStack,
   Grid,
   Image
 } from '@chakra-ui/core';
-import { Link } from "@chakra-ui/core";
 import { PinkButton, H1, H3, gradient } from './utils';
 import NavBar from './NavBar';
 
