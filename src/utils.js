@@ -9,14 +9,15 @@ import { Link } from "react-router-dom";
 export function PinkButton(props) {
     return (
         <Button
-            as={Link}
-            to={props.to}
+            //as={Link}
+            //to={props.to}
             bg="pink"
             borderRadius={25}
             color="white"
             fontSize="sm"
             fontWeight="regular"
             variant="solid"
+            onClick={props.onClick}
         >
             {props.children}
         </Button>

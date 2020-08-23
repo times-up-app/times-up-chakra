@@ -32,7 +32,7 @@ function Landing(props) {
                     <Text fontSize="xl" fontWeight="medium" color="brown">Time's Up!</Text>
                     <Text fontSize="md" color="brown">Get ahead of time.</Text>
                     <Box h="40px" />
-                    <PinkButton to="/create-meeting">Create Meeting</PinkButton>
+                    <PinkButton onClick={() => window.location.assign("create-meeting")}>Create Meeting</PinkButton>
                     <PinkButton to="/">Join Meeting</PinkButton>
                 </VStack>
             </Grid>
