@@ -7,7 +7,7 @@ import {
   Image,
   SimpleGrid
 } from '@chakra-ui/core';
-import { PinkButton, gradient } from './utils';
+import { PinkButton, H3, P, gradient } from './utils';
 import NavBar from './NavBar';
 
 function About(props) {
@@ -22,12 +22,10 @@ function About(props) {
         >
             <NavBar />
             <SimpleGrid p="100px" columns={1} spacing={20}>
-                <Text fontSize="lg" fontWeight="medium" color="brown">
-                    Time to get stuff done.
-                </Text>
-                <Text fontSize="sm" fontWeight="regular" color="brown" whiteSpace="pre-line">
+                <H3>Time to get stuff done.</H3>
+                <P whiteSpace="pre-line">
                     Times Up! is a time management tool, designed to make meetings more efficient than ever.
-                </Text>
+                </P>
             </SimpleGrid>
         </Box>
     )
