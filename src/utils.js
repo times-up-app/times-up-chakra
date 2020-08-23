@@ -1,10 +1,6 @@
 import React from 'react';
 import {
-  Box,
   Text,
-  VStack,
-  Grid,
-  Image,
   Button
 } from '@chakra-ui/core';
 import theme from './theme';

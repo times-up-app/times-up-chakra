@@ -16,8 +16,8 @@ theme.colors = {
 };
 
 theme.fontSizes = {
-    sm: "14px",
-    md: "22px",
+    sm: "16px",
+    md: "24px",
     lg: "36px",
     xl: "72px",
 };

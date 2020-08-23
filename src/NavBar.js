@@ -3,7 +3,6 @@ import {
   Box,
   Flex,
   Spacer,
-  Button,
   ButtonGroup
 } from '@chakra-ui/core';
 import { LinkButton } from './utils';

@@ -4,15 +4,20 @@ import {
   Text,
   VStack,
   Grid,
-  Image,
-  Button
+  Image
 } from '@chakra-ui/core';
 import { PinkButton, gradient } from './utils';
 import NavBar from './NavBar';
 
 function Landing(props) {
     return (
-        <Box bg={gradient}>
+        <Box
+            bg={gradient}
+            bgImage={`url(sand_1.png), url(sand_2.png),${gradient}`}
+            bgSize="700px, 1000px, cover"
+            bgRepeat="no-repeat, no-repeat"
+            bgPosition="-150px 0px, 170% 170%"
+        >
             <NavBar />
             <Grid
                 minH="100vh"
@@ -21,7 +26,7 @@ function Landing(props) {
                 align="center"
                 justify="center"
             >
-                <VStack spacing={4}>
+                <VStack>
                     <Image src="logo.png" h="200px" />
                     <Text fontSize="xl" fontWeight="medium" color="brown">Time's Up!</Text>
                     <Text fontSize="md" color="brown">Get ahead of time.</Text>
