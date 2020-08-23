@@ -33,16 +33,17 @@ class CreateMeeting extends Component{
     async submitForm(event,state) {
         console.log(event);
         console.log(state);
-      //
-      //   // POST request using fetch with async/await
-      //   const requestOptions = {
-      //     method: 'POST',
-      //     headers: { 'Content-Type': 'application/json' },
-      //     body: JSON.stringify({meeting_name: this.state.meetingName, start_time: this.state.startTime, end_time: this.state.endTime})
-      //   };
-      // const response = await fetch(' https://sabitatasnim.api.stdlib.com/times-up@dev/meeting-software-airtable/', requestOptions);
-      // const data = await response.json();
-      // console.log("IhateReact")
+
+        // POST request using fetch with async/await
+        const requestOptions = {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({meeting_name: event.name, start_hour: this.state.startHour, start_min: this.state.startMinute,
+                              end_hour: this.state.endHour, end_min: this.state.endMinute})
+        };
+      const response = await fetch(' https://sabitatasnim.api.stdlib.com/times-up@dev/meeting-software-airtable/', requestOptions);
+      const data = await response.json();
+      console.log("IhateReact")
     }
 
     render() {
