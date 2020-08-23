@@ -9,10 +9,6 @@ import { Link } from "react-router-dom";
 export function PinkButton(props) {
     return (
         <Button
-<<<<<<< HEAD
-            //as={Link}
-            //to={props.to}
-=======
             as={Link}
             to={props.to}
             bg={(props.isDisabled && "dullPink") || "pink"}
@@ -31,18 +27,14 @@ export function PinkButton(props) {
 export function PinkSubmitButton(props) {
     return (
         <Button
->>>>>>> 93663ba79c84ef0ee1b5b4324afad8717eb28e1b
-            bg="pink"
+            onClick={props.onClick}
+            bg={(props.isDisabled && "dullPink") || "pink"}
             borderRadius={25}
             color="white"
             fontSize="sm"
             fontWeight="regular"
             variant="solid"
-<<<<<<< HEAD
-            onClick={props.onClick}
-=======
             {...props}
->>>>>>> 93663ba79c84ef0ee1b5b4324afad8717eb28e1b
         >
             {props.children}
         </Button>

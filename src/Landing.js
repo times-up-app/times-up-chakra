@@ -30,13 +30,8 @@ function Landing(props) {
                     <H1>Time's Up!</H1>
                     <H3>Get ahead of time.</H3>
                     <Box h="40px" />
-<<<<<<< HEAD
-                    <PinkButton onClick={() => window.location.assign("create-meeting")}>Create Meeting</PinkButton>
-                    <PinkButton to="/">Join Meeting</PinkButton>
-=======
                     <PinkButton to="/create">Create Meeting</PinkButton>
                     <PinkButton to="/join">Join Meeting</PinkButton>
->>>>>>> 93663ba79c84ef0ee1b5b4324afad8717eb28e1b
                 </VStack>
             </Grid>
         </Box>
