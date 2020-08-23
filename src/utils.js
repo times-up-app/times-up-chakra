@@ -4,28 +4,35 @@ import {
   Button
 } from '@chakra-ui/core';
 import theme from './theme';
+import { Link } from "react-router-dom";
 
 export function PinkButton(props) {
     return (
         <Button
+            as={Link}
+            to={props.to}
             bg="pink"
             borderRadius={25}
             color="white"
-            fontWeight="regular"
             fontSize="sm"
+            fontWeight="regular"
             variant="solid"
         >
-            <Text fontSize="sm" color="white">
-                {props.msg}
-            </Text>
+            {props.children}
         </Button>
     )
 }
 
 export function LinkButton(props) {
     return (
-        <Button fontSize="sm" fontWeight="medium" color="brown">
-            {props.msg}
+        <Button
+            as={Link}
+            to={props.to}
+            fontSize="sm"
+            fontWeight="medium"
+            color="brown"
+        >
+            {props.children}
         </Button>
     )
 }

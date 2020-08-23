@@ -32,8 +32,8 @@ function Landing(props) {
                     <Text fontSize="xl" fontWeight="medium" color="brown">Time's Up!</Text>
                     <Text fontSize="md" color="brown">Get ahead of time.</Text>
                     <Box h="40px" />
-                    <PinkButton msg="Create Meeting" href = "/Form"/>
-                    <PinkButton msg="Join Meeting" />
+                    <PinkButton to="/create-meeting">Create Meeting</PinkButton>
+                    <PinkButton to="/">Join Meeting</PinkButton>
                 </VStack>
             </Grid>
         </Box>

@@ -13,9 +13,9 @@ function NavBar(props) {
             <Spacer />
             <Box p="5">
                 <ButtonGroup variant="link" spacing="5">
-                    <LinkButton msg="Home"/>
-                    <LinkButton msg="About"/>
-                    <LinkButton msg="Settings"/>
+                    <LinkButton to="/">Home</LinkButton>
+                    <LinkButton to="/about">About</LinkButton>
+                    <LinkButton to="/">Settings</LinkButton>
                 </ButtonGroup>
             </Box>
         </Flex>
