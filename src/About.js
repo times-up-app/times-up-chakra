@@ -10,7 +10,7 @@ import {
 import { PinkButton, gradient } from './utils';
 import NavBar from './NavBar';
 
-function Settings(props) {
+function About(props) {
     return (
         <Box
             bg={gradient}
@@ -34,4 +34,4 @@ function Settings(props) {
 
 }
 
-export default Settings;
+export default About;
