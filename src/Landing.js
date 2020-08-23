@@ -17,7 +17,7 @@ function Landing(props) {
             bgImage={`url(sand_1.png), url(sand_2.png),${gradient}`}
             bgSize="700px, 1000px, cover"
             bgRepeat="no-repeat, no-repeat"
-            bgPosition="-150px 0px, 170% 170%"
+            bgPosition="-20% 0px, 170% 170%"
         >
             <NavBar />
             <Grid
