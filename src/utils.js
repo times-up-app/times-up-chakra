@@ -7,10 +7,25 @@ import theme from './theme';
 import { Link } from "react-router-dom";
 
 export function PinkButton(props) {
+    if (props.to) {
+        return (
+            <Button
+                as={Link}
+                to={props.to}
+                bg={(props.isDisabled && "dullPink") || "pink"}
+                borderRadius={25}
+                color="white"
+                fontSize="sm"
+                fontWeight="regular"
+                variant="solid"
+                {...props}
+            >
+                {props.children}
+            </Button>
+        )
+    }
     return (
         <Button
-            as={Link}
-            to={props.to}
             bg={(props.isDisabled && "dullPink") || "pink"}
             borderRadius={25}
             color="white"
@@ -60,7 +75,7 @@ export const H1 = (props) => (
 );
 
 export const H2 = (props) => (
-    <Text fontSize="lg" fontWeight="medium" color="brown">{props.children}</Text>
+    <Text fontSize="lg" fontWeight="medium" color="brown" {...props}>{props.children}</Text>
 );
 
 export const H3 = (props) => (

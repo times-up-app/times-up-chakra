@@ -14,6 +14,9 @@ theme.colors = {
     dullPink: "#BA9A9A",
     white: "#FFFFFF",
     lightYellow: "#FFF7D7",
+    grey: "#989898",
+    blue: "#99DAFF",
+    darkBlue: "#007BC0"
 };
 
 theme.fontSizes = {

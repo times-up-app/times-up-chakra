@@ -48,7 +48,7 @@ function JoinMeeting(props) {
                     }}
                 >
                     <Form>
-                        <H2>Joint Existing Meeting</H2>
+                        <H2>Join Existing Meeting</H2>
                         <Box h="20px"/>
                         <SimpleGrid columns={2} spacing={10} w="400px">
                             <Label>Meeting ID</Label>

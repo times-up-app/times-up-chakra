@@ -17,6 +17,7 @@ import {
 import { PinkSubmitButton, Label, H2, P, gradient } from './utils';
 import NavBar from './NavBar';
 import { Formik, Field, Form } from 'formik';
+import { withRouter } from 'react-router-dom';
 
 class CreateMeeting extends Component{
     constructor(props) {
@@ -43,7 +44,6 @@ class CreateMeeting extends Component{
         };
       const response = await fetch(' https://sabitatasnim.api.stdlib.com/times-up@dev/meeting-software-airtable/', requestOptions);
       const data = await response.json();
-      console.log("IhateReact")
     }
 
     render() {
@@ -73,7 +73,11 @@ class CreateMeeting extends Component{
                                 }
                                 return errors;
                         }}
-                        onSubmit={(event) => this.submitForm(event, this.state)}
+                        onSubmit={(event) => {
+                            this.submitForm(event, this.state);
+                            // right now we're always sent to this random meeting ID
+                            this.props.history.push('/meeting-123456');
+                        }}
                     >
                         <Form>
                             <H2>Creating New Meeting</H2>
@@ -221,4 +225,4 @@ class CreateMeeting extends Component{
     }
 }
 
-export default CreateMeeting;
+export default withRouter(CreateMeeting);
